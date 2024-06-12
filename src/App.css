@@ -1,0 +1,256 @@
+.App.light {
+  background-color: white;
+  color: black;
+}
+
+.App.dark {
+  background-color: black;
+  color: white;
+}
+
+.App-header {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #007bff;
+}
+
+.App {
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.App.light {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.App.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.App-header {
+  background-color: inherit;
+  padding: 20px;
+}
+
+button {
+  background-color: inherit;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.App-footer {
+  background-color: #1b1c1c;
+  padding: 20px;
+  border-top: 1px solid #34495e;
+  margin-top: 0px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-text {
+  color: #27ae60;
+  font-size: 1.2rem;
+  animation: color-change 2s infinite alternate;
+}
+
+@keyframes color-change {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+
+.weather-icon {
+  width: 100px;  /* Adjust the width as needed */
+  height: auto;  /* Maintain aspect ratio */
+  margin: 10px 0;  /* Add some margin for spacing */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .weather-icon {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .weather-icon {
+    width: 200px;
+  }
+
+  .controls {
+    gap: 20px;
+  }
+
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+/* General Styles */
+.App.light {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.App.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.App-header {
+  padding: 20px;
+  text-align: center;
+  background-color: inherit;
+}
+
+button {
+  background-color: inherit;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.App-footer {
+  background-color: #1b1c1c;
+  padding: 20px;
+  border-top: 1px solid #34495e;
+  margin-top: 36vh;  /* Added extra space to the top of the footer */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-text {
+  color: #27ae60;
+  font-size: 1.2rem;
+  animation: color-change 2s infinite alternate;
+}
+
+@keyframes color-change {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+
+.weather-icon {
+  width: 100px;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Responsive Layouts */
+@media (max-width: 767px) { /* Mobile devices */
+  .controls {
+    flex-direction: column;
+  }
+
+  .weather-icon {
+    width: 80px;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+
+  .App-header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { /* Tablets */
+  .controls {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .weather-icon {
+    width: 120px;
+  }
+
+  .footer-text {
+    font-size: 1.1rem;
+  }
+
+  .App-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) { /* Laptops and larger screens */
+  .controls {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .weather-icon {
+    width: 150px;
+  }
+
+  .footer-text {
+    font-size: 1.2rem;
+  }
+
+  .App-header h1 {
+    font-size: 2.5rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
