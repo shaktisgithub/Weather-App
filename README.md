@@ -20,5 +20,10 @@ A weather application that provides current weather information based on user in
 - The application currently does not handle all edge cases for API errors.
 - Only basic styling is applied.
 
-## Screenshots
-[Provide link to screenshots or demo]
+
+github-https://github.com/shaktisgithub/Weather-App.git
+deployed-https://weather-app-one-teal.vercel.app/
+https://github.com/shaktisgithub/Weather-App/assets/140899319/3a3e39aa-fbe3-4227-a3f5-af7f2b3f955
+
+
+
